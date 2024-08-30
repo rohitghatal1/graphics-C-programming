@@ -1,7 +1,6 @@
 #include<stdio.h>
 #include<conio.h>
 #include<graphics.h>
-
 void main(){
 int gd = DETECT, gm;
 initgraph(&gd, &gm, "C:\\TURBOC3\\BGI");
@@ -48,6 +47,16 @@ line(135,260,180,310);
 
 //for creating road
 line(0,90,170,600);
+line(10,90,15,105);
+line(18,110,23,125);
+line(26,130,31,145);
+line(34,150,39,165);
+line(41,170,48,190);
+line(52,200,61,225);
+line(65,235,77,270);
+line(82,280,96,320);
+line(103,335,123,390);
+line(130,410,153,470);
 line(20,90,240,600);
 
 //for creating mountains
@@ -76,5 +85,19 @@ line(380,10,390,7);
 line(390,7,400,10);
 line(400,10,405,15);
 line(405,15,470,90);
+
+//for crating sun
+arc(310,95,50,120,60);
+line(270,25,280,35);
+line(280,20,287,32);
+line(290,15,295,27);
+line(300,14,304,26);
+line(310,13,310,25);
+line(320,14,316,26);
+line(330,15,325,27);
+line(340,17,333,30);
+line(350,19,343,32);
+line(360,22,352,34);
 getch();
+
 }
