@@ -36,6 +36,13 @@ rectangle(390,320,420,300);
 line(180,250,180,310);
 line(180,310,215,350);
 
+//for windows on second floor
+rectangle(210,220,300,240);
+rectangle(320,220,410,240);
+
+//for circle on top side of house
+circle(151,180,5);
+
 line(135,190,135,260);
 line(135,260,180,310);
 getch();
