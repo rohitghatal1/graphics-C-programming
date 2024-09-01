@@ -58,6 +58,11 @@ void main() {
     line(255,395,253,398);
     line(247,398,249,400);
     line(253,398,249,400);
+    //neck
+    line(247,405,247,410);
+    line(253,405,253,410);
+    //body
+    rectangle(240,410,260,430);
 
     // Grass on garden
     setcolor(GREEN);
