@@ -44,6 +44,21 @@ void main() {
     setfillstyle(SOLID_FILL, LIGHTGREEN);
     floodfill(290,390,GREEN);
 
+    //creating person
+    setcolor(WHITE);
+    circle(250,390,15);
+    //eyes
+    circle(245,385,3);
+    circle(245,384,1);
+    circle(255,385,3);
+    circle(255,384,1);
+    //mouth
+    line(245,395,255,395);
+    line(245,395,247,398);
+    line(255,395,253,398);
+    line(247,398,249,400);
+    line(253,398,249,400);
+
     // Grass on garden
     setcolor(GREEN);
     line(330,390,330,400);
