@@ -7,6 +7,7 @@ void main() {
     initgraph(&gd, &gm, "C:\\TURBOC3\\BGI");
 
     // House structure
+    setcolor(CYAN);
     line(150,150,400,150);
     line(150,150,130,200);
     line(150,150,180,210);
@@ -40,6 +41,8 @@ void main() {
     line(280,380,340,450);
     line(500,380,560,450);
     line(340,450,560,450);
+    setfillstyle(SOLID_FILL, LIGHTGREEN);
+    floodfill(290,390,GREEN);
 
     // Grass on garden
     setcolor(GREEN);
@@ -63,7 +66,7 @@ void main() {
     line(460,438,470,425);
 
     // Shovel
-    setcolor(DARKGRAY);
+    setcolor(BLACK);
     line(350,430,390,430);
     line(350,435,390,435);
     line(390,430,390,425);
@@ -82,14 +85,20 @@ void main() {
     setcolor(BROWN);
     rectangle(260,320,290,300);
     rectangle(390,320,420,300);
-    setcolor(WHITE);
+    setfillstyle(SOLID_FILL, LIGHTGRAY);
+    floodfill(270,315,BROWN);
+    floodfill(395,315,BROWN);
+    setcolor(CYAN);
     line(180,250,180,310);
     line(180,310,215,350);
     setcolor(BROWN);
     rectangle(210,220,300,240);
     rectangle(320,220,410,240);
+    setfillstyle(SOLID_FILL, LIGHTGRAY);
+    floodfill(215,225,BROWN);
+    floodfill(325,225,BROWN);
     circle(151,180,5);
-    setcolor(WHITE);
+    setcolor(CYAN);
     line(135,190,135,260);
     line(135,260,180,310);
 
