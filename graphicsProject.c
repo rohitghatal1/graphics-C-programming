@@ -23,15 +23,26 @@ void main() {
     line(215,350,455,350);
 
     // Door
+    setcolor(BROWN);
     rectangle(320,350,350,300);
+    line(320,350,330,340);
+    line(320,300,330,310);
+    line(330,340,330,310);
+    circle(325,325,2);
+
+    line(350,300,340,310);
+    line(340,310,340,340);
+    line(340,340,350,350);
 
     // Garden
+    setcolor(GREEN);
     line(280,380,500,380);
     line(280,380,340,450);
     line(500,380,560,450);
     line(340,450,560,450);
 
     // Grass on garden
+    setcolor(GREEN);
     line(330,390,330,400);
     line(325,395,330,399);
     line(330,399,335,395);
@@ -52,6 +63,7 @@ void main() {
     line(460,438,470,425);
 
     // Shovel
+    setcolor(DARKGRAY);
     line(350,430,390,430);
     line(350,435,390,435);
     line(390,430,390,425);
@@ -67,17 +79,22 @@ void main() {
     rectangle(350,428,345,438);
 
     // Windows
+    setcolor(BROWN);
     rectangle(260,320,290,300);
     rectangle(390,320,420,300);
+    setcolor(WHITE);
     line(180,250,180,310);
     line(180,310,215,350);
+    setcolor(BROWN);
     rectangle(210,220,300,240);
     rectangle(320,220,410,240);
     circle(151,180,5);
+    setcolor(WHITE);
     line(135,190,135,260);
     line(135,260,180,310);
 
     // Road
+    setcolor(LIGHTGRAY);
     line(0,90,170,600);
     line(0,90,3,83);
     line(3,83,5,80);
@@ -99,6 +116,7 @@ void main() {
     line(145,380,240,600);
 
     // Mountains
+    setcolor(GREEN);
     line(20,90,70,20);
     line(70,20,75,15);
     line(75,15,80,10);
@@ -121,19 +139,19 @@ void main() {
     line(400,10,405,15);
     line(405,15,470,90);
 
-
-
-    // New Sun at the right side of third mountain
-    setcolor(YELLOW);  // Set color for the sun
-    circle(480,50,30);  // Draw the sun
-    setfillstyle(SOLID_FILL, YELLOW);  // Fill the sun with yellow color
+    //for creating sun
+    setcolor(YELLOW);
+    circle(500,40,30);
+    setfillstyle(SOLID_FILL, YELLOW);
     floodfill(481,51,YELLOW);
 
     // Road to house
+    setcolor(LIGHTGRAY);
     line(138,361,210,360);
     line(145,380,210,379);
 
     // Tree next to house
+    setcolor(DARKGRAY);
     line(550,380,550,260);
     line(550,380,540,400);
     line(555,410,565,390);
@@ -148,6 +166,7 @@ void main() {
     line(563,255,543,208);
     line(563,255,583,208);
     line(580,260,600,210);
+    setcolor(GREEN);
     arc(563,170,5,165,45);
     arc(585,195,280,70,40);
     arc(540,190,100,265,40);
