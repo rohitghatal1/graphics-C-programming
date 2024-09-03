@@ -6,6 +6,8 @@ void main() {
     int gd = DETECT, gm;
     initgraph(&gd, &gm, "C:\\TURBOC3\\BGI");
 
+    outtextxy(250,180,"Rohit Ghatal");
+
     // House structure
     setcolor(CYAN);
     line(150,150,400,150);
@@ -47,27 +49,33 @@ void main() {
     //creating person
     setcolor(WHITE);
     circle(250,390,15);
+
     //eyes
     circle(245,385,3);
     circle(245,384,1);
     circle(255,385,3);
     circle(255,384,1);
+
     //mouth
     line(245,395,255,395);
     line(245,395,247,398);
     line(255,395,253,398);
     line(247,398,249,400);
     line(253,398,249,400);
+
     //neck
     line(247,405,247,410);
     line(253,405,253,410);
+
     //body
     rectangle(240,410,260,435);
+
     //hands
     line(240,415,230,420);
     line(230,420,222,412);
     line(240,418,231,424);
     line(231,424,218,412);
+
     //fingers
     line(222,412,223,408);
     line(223,408,223,405);
@@ -81,15 +89,18 @@ void main() {
     line(216,407,214,400);
     line(216,404,215,409);
     line(215,408,217,411);
+
     //left hand
     line(260,415,265,425);
     line(265,425,263,435);
     line(260,412,267,426);
     line(267,426,266,436);
     circle(264,435,2);
+
     //legs
     rectangle(243,435,248,448);
     rectangle(257,435,252,448);
+
     //shoes
     line(243,448,239,451);
     line(248,448,245,451);
@@ -98,7 +109,6 @@ void main() {
     line(257,448,254,451);
     line(252,448,249,451);
     line(254,451,249,451);
-
 
     // Grass on garden
     setcolor(GREEN);
@@ -120,6 +130,12 @@ void main() {
     line(460,420,460,440);
     line(460,438,450,425);
     line(460,438,470,425);
+    line(505,415,505,440);
+    line(505,437,495,425);
+    line(505,437,515,425);
+    line(450,390,450,408);
+    line(450,405,442,397);
+    line(450,405,458,397);
 
     // Shovel
     setcolor(BLACK);
