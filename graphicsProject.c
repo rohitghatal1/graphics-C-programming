@@ -69,6 +69,11 @@ void main() {
 
     //body
     rectangle(240,410,260,435);
+    line(250,410,250,435);
+    circle(253,415,1);
+    circle(253,420,1);
+    circle(253,425,1);
+    circle(253,430,1);
 
     //hands
     line(240,415,230,420);
@@ -170,6 +175,7 @@ void main() {
     floodfill(215,225,BROWN);
     floodfill(325,225,BROWN);
     circle(151,180,5);
+    floodfill(152,181,BROWN);
     setcolor(CYAN);
     line(135,190,135,260);
     line(135,260,180,310);
